@@ -4,12 +4,16 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
 object UserService {
-  def createUser(name: String, email: String) = {
+  def createUser(firstName: String, lastName: String,  email: String) = {
     exec(http("Create User")
-      .post("/users")
-      .body(StringBody(s"""{ "name": "$name", "email": "$email" }""")).asJson
+      .post("/users/add/")
+      .body(StringBody(s"""{ "firstName": "$firstName", "lastName": "$lastName", "email": "$email" }""")).asJson
       .check(status.is(201)))
   }
 
-  def getUserby
+  def getUserbyId(num: Number) = {
+    exec(http("Get User")
+      .get(s"/users/$num"))
+  }
+
 }

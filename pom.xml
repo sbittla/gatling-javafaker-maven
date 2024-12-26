@@ -14,6 +14,7 @@
         <gatling-maven-plugin.version>4.5.0</gatling-maven-plugin.version>
         <maven-jar-plugin.version>3.2.1</maven-jar-plugin.version>
         <scala-maven-plugin.version>4.3.2</scala-maven-plugin.version>
+        <gatling-app.version>3.13.1</gatling-app.version>
     </properties>
 
     <dependencies>
@@ -92,6 +93,11 @@
                 <groupId>org.scala-lang</groupId>
                 <artifactId>scala-library</artifactId>
                 <version>${scala.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>io.gatling</groupId>
+                <artifactId>gatling-app</artifactId>
+                <version>${gatling-app.version}</version>
             </plugin>
         </plugins>
     </build>

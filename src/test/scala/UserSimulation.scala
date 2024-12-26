@@ -7,18 +7,16 @@ import services.UserService
 
 class UserSimulation extends Simulation {
 
-  val envConf = ConfigFactory.load(“src/resources/config/UserSimulation.conf”)
+  val envConf = ConfigFactory.load("resources/config/UserConfig.conf")
   val baseURL = envConf.getString("baseURL")
-  get
-  //val baseURL = envConf.getString("")
 
   val httpProtocol = http.baseUrl(baseURL)
 
   val scn = scenario("User Scenario")
-    .exec(UserService.createUser(DataGenerator.generateName(), DataGenerator.generateEmail()))
-    .exec(UserService.getUserById(1))
+    .exec(UserService.createUser(DataGenerator.generateFirstName(), DataGenerator.generateLastName(), DataGenerator.generateEmail()))
+    .exec(UserService.getUserbyId(1))
 
   setUp(
-    scn.inject(atOnceUsers(10))
+    scn.inject(atOnceUsers(1))
   ).protocols(httpProtocol)
 }
