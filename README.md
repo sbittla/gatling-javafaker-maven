@@ -28,9 +28,13 @@ gatling-javafaker-maven/
 │   │   ├── scala/
 │   │   │   └── simulation/
 │   │   │       └── UserSimulation.scala
+│   │   ├── helpers/
+│   │   │   └── Engine.scala
 │   ├── resources/
 │   │   ├── config/
 │   │   │   └── UserConfig.conf
+│   │   ├── images/
+│   │   │   └── IntelliJ.png
 │   │   │
 ├── pom.xml
 └── README.md
@@ -51,3 +55,12 @@ To run the `UserSimulation`, use the following command:
 ```bash
 mvn gatling:test
 ```
+
+Example
+
+To run the `UserSimulation`, use the following command:
+
+## IntelliJ
+
+To configure run time settings in IntelliJ
+<img height="500" src="https://github.com/sbittla/gatling-javafaker-maven/tree/main/src/test/resources/images/IntelliJ.png" width="500"/>
