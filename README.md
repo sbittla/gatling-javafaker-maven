@@ -15,6 +15,7 @@ This is a simple framework for Gatling Frontline using JavaFaker for data genera
 
 ## Folder Structure
 
+```
 gatling-javafaker-maven/
 ├── src/
 │   ├── main/
@@ -33,6 +34,7 @@ gatling-javafaker-maven/
 │   │   │
 ├── pom.xml
 └── README.md
+```
 
 - `src/main/scala`: Contains the main code (config, service, util).
 - `src/test/scala`: Contains the Gatling simulations.
