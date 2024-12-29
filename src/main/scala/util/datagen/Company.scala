@@ -23,8 +23,8 @@ trait Company {
   val companyFeeder:Iterator[Map[String, Any]] = {Iterator.continually(
     Map (
       "department_Feeder" -> Random.shuffle(departments).head,
-        "company_name_Feeder" -> companyFaker.company().name(),
-        "title_Feeder" -> companyFaker.job().title()
+      "company_name_Feeder" -> companyFaker.company().name(),
+      "title_Feeder" -> companyFaker.job().title()
     )
   )}
 }

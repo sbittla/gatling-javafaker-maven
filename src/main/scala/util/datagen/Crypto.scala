@@ -29,8 +29,8 @@ trait Crypto {
   val cryptoFeeder:Iterator[Map[String, Any]] = {Iterator.continually(
     Map (
       "coin_Feeder" -> Random.shuffle(cryptoNames).head,
-        "wallet_Feeder" -> Random.shuffle(cryptoNetworks).head,
-        "network_Feeder" -> cryptoFaker.crypto().sha256()
+      "wallet_Feeder" -> Random.shuffle(cryptoNetworks).head,
+      "network_Feeder" -> cryptoFaker.crypto().sha256()
     )
   )}
 }

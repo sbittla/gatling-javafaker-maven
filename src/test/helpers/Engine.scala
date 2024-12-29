@@ -11,8 +11,10 @@ object Engine extends App {
       .resourcesDirectory("./src/test/resources")
       .resultsDirectory("./target/gatling/results")
       .binariesDirectory("./target/classes")
-      .simulationClass("UserSimulation");
+      //.simulationClass("SimpleUserSimulation");
+      .simulationClass("UserSimulationWithJSONBody");
     Gatling.fromMap(gatlingProperties.build)
+
   //}
 
 }

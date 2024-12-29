@@ -1,5 +1,4 @@
 {
-  "id": "${id_Feeder}",
   "firstName": "${firstName_Feeder}",
   "lastName": "${lastName_Feeder}",
   "maidenName": "${maidenName_Feeder}",
@@ -43,7 +42,7 @@
   },
   "company": {
     "department": "${department_Feeder}",
-    "name": "${name_Feeder}",
+    "name": "${company_name_Feeder}",
     "title": "${title_Feeder}",
     "address": {
       "address": "${address_Feeder}",

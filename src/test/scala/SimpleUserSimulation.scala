@@ -5,7 +5,7 @@ import io.gatling.http.Predef._
 import util.DataGenerator
 import services.UserService
 
-class UserSimulation extends Simulation {
+class SimpleUserSimulation extends Simulation {
 
   val envConf = ConfigFactory.load("resources/config/UserConfig.conf")
   val baseURL = envConf.getString("baseURL")

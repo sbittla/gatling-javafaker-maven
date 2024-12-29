@@ -8,14 +8,14 @@ trait Address {
 
   val addressFeeder:Iterator[Map[String, Any]] = {Iterator.continually(
     Map (
-       "address_Feeder" -> addressFaker.address().streetAddress(),
-        "city_Feeder" -> addressFaker.address().city(),
-        "state_Feeder" -> addressFaker.address().state(),
-        "stateCode_Feeder" -> addressFaker.address().stateAbbr(),
-        "postalCode_Feeder" -> addressFaker.address().zipCode(),
-        "country_Feeder" -> addressFaker.address().country(),
-        "lat_Feeder" -> addressFaker.address().latitude(),
-        "lng_Feeder" -> addressFaker.address().longitude()
+      "address_Feeder" -> addressFaker.address().streetAddress(),
+      "city_Feeder" -> addressFaker.address().city(),
+      "state_Feeder" -> addressFaker.address().state(),
+      "stateCode_Feeder" -> addressFaker.address().stateAbbr(),
+      "postalCode_Feeder" -> addressFaker.address().zipCode(),
+      "country_Feeder" -> addressFaker.address().country(),
+      "lat_Feeder" -> addressFaker.address().latitude(),
+      "lng_Feeder" -> addressFaker.address().longitude()
     )
   )}
 }
