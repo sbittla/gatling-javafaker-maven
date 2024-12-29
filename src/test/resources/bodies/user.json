@@ -1,0 +1,70 @@
+{
+  "id": "${id_Feeder}",
+  "firstName": "${firstName_Feeder}",
+  "lastName": "${lastName_Feeder}",
+  "maidenName": "${maidenName_Feeder}",
+  "age": "${age_Feeder}",
+  "gender": "${gender_Feeder}",
+  "email": "${email_Feeder}",
+  "phone": "${phone_Feeder}",
+  "username": "${username_Feeder}",
+  "password": "${password_Feeder}",
+  "birthDate": "${birthDate_Feeder}",
+  "image": "${image_Feeder}",
+  "bloodGroup": "${bloodGroup_Feeder}",
+  "height": "${height_Feeder}",
+  "weight": "${weight_Feeder}",
+  "eyeColor": "${eyeColor_Feeder}",
+  "hair": {
+    "color": "${color_Feeder}",
+    "type": "${type_Feeder}"
+  },
+  "ip": "${ip_Feeder}",
+  "address":  {
+    "address": "${address_Feeder}",
+    "city": "${city_Feeder}",
+    "state": "${state_Feeder}",
+    "stateCode": "${stateCode_Feeder}",
+    "postalCode": "${postalCode_Feeder}",
+    "coordinates": {
+      "lat": "${lat_Feeder}",
+      "lng": "${lng_Feeder}"
+    },
+    "country": "${country_Feeder}"
+  },
+  "macAddress": "${macAddress_Feeder}",
+  "university": "${university_Feeder}",
+  "bank": {
+    "cardExpire": "${cardExpire_Feeder}",
+    "cardNumber": "${cardNumber_Feeder}",
+    "cardType": "${cardType_Feeder}",
+    "currency": "${currency_Feeder}",
+    "iban": "${iban_Feeder}"
+  },
+  "company": {
+    "department": "${department_Feeder}",
+    "name": "${name_Feeder}",
+    "title": "${title_Feeder}",
+    "address": {
+      "address": "${address_Feeder}",
+      "city": "${city_Feeder}",
+      "state": "${state_Feeder}",
+      "stateCode": "${stateCode_Feeder}",
+      "postalCode": "${postalCode_Feeder}",
+      "coordinates": {
+        "lat": "${lat_Feeder}",
+        "lng": "${lng_Feeder}"
+      },
+      "country": "${country_Feeder}"
+    }
+  },
+  "ein": "${ein_Feeder}",
+  "ssn": "${ssn_Feeder}",
+  "userAgent": "${userAgent_Feeder}",
+  "crypto": {
+    "coin": "${coin_Feeder}",
+    "wallet": "${wallet_Feeder}",
+    "network": "${network_Feeder}"
+  },
+  "role": "${role_Feeder}"
+}
