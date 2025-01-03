@@ -8,11 +8,10 @@ trait CustomerAccess  {
 
   val userFacade = "/users"
 
-  val headers: Map[String, String] = Map(
-    "Content-Type" -> "application/json"//,
-    //"Authorization" -> "Bearer your-token-here",
-    //"Accept" -> "application/json",
-    //"User-Agent" -> "Scala HTTP Client"
+  val headers  = Map(
+    HttpHeaderNames.Accept -> HttpHeaderValues.ApplicationJson,
+    HttpHeaderNames.ContentType -> HttpHeaderValues.ApplicationJson,
+    HttpHeaderNames.UserAgent -> "Gatling User"
   )
 
   def createUserWithJSONBody(requestName:String="POST createUser", responseCode:Int, fileName: String) = {
